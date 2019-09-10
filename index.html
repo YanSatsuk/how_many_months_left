@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How many months left</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header--title bold">
+            Сколько тебе осталось месяцев?
+        </div>
+    </header>
+    <main class="container">
+        <aside class="aside">
+            <div class="aside--container">
+                <label for="birthday" class="bold">Когда родился?</label>
+                <br>
+                <input type="date" id="birthday" name="birthday" class="mar-bot-20 width143">
+                <br>
+                <label for="deathday" class="bold">Сколько проживешь?</label>
+                <br>
+                <input type="number" id="deathday" name="deathday" class="mar-bot-20 width143" pattern="Лет">
+                <br>
+                <button id="calc">Считаем</button>
+            </div>
+        </aside>
+        <section class="section">
+            <div class="months" id="months"></div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
