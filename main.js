@@ -41,9 +41,9 @@ const RUN = (function () {
 
         for (let i = 1; i <= total; i++) {
             if (i <= proebal) {
-                html += '<div class="proebal"></div>';
+                html += `<div class="proebal" title="Проебал ${proebal}"></div>`;
             } else {
-                html += '<div class="left"></div>';
+                html += `<div class="left" title="Осталось ${total - proebal}"></div>`;
             }
         }
 
